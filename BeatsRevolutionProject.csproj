@@ -220,6 +220,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\ArrowSprite.cs" />
+    <Compile Include="Assets\Script\GameController.cs" />
     <Compile Include="Assets\Script\MenuManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
