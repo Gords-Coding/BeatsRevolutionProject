@@ -391,6 +391,8 @@ GameObject:
   m_Component:
   - component: {fileID: 478704664}
   - component: {fileID: 478704663}
+  - component: {fileID: 478704666}
+  - component: {fileID: 478704665}
   m_Layer: 0
   m_Name: Menu Manager
   m_TagString: Untagged
@@ -422,6 +424,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &478704665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 478704662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d43e5f520f706f45b7c9a9b4f928948, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goToScene: Options
+--- !u!114 &478704666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 478704662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5527e7ec4056fcb479e4762e0f0e351c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  URL: www.google.com
 --- !u!1 &543045505
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,7 +523,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 543045508}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 478704666}
+        m_MethodName: OpenURL
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &543045508
@@ -544,6 +581,7 @@ GameObject:
   - component: {fileID: 1059984376}
   - component: {fileID: 1059984375}
   - component: {fileID: 1059984374}
+  - component: {fileID: 1059984378}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -613,6 +651,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1059984378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1059984373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d43e5f520f706f45b7c9a9b4f928948, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goToScene: Options
 --- !u!1 &1227603306
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,7 +885,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1408451543}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 478704665}
+        m_MethodName: NextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1408451543

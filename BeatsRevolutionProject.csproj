@@ -221,8 +221,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\ArrowSprite.cs" />
+    <Compile Include="Assets\Script\ChangeScene.cs" />
     <Compile Include="Assets\Script\GameController.cs" />
+    <Compile Include="Assets\Script\LinkURL.cs" />
     <Compile Include="Assets\Script\MenuManager.cs" />
+    <Compile Include="Assets\Script\sound.cs" />
+    <Compile Include="Assets\Script\Ticked.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
